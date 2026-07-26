@@ -51,3 +51,109 @@
     </header>
 </body>    
 </html>
+<!-- Main Content Area - Recipe Dashboard Layout -->
+    <main class="container my-4">
+        <div class="row g-4">
+
+            <!-- SIDEBAR (Filters Area) -->
+            <aside class="col-lg-3 col-md-4">
+                <div class="filter-sidebar">
+                    
+                    <!-- Search Input Box -->
+                    <div class="mb-4">
+                        <label for="searchQuery" class="form-label fw-bold text-secondary small">SIDEBAR (Filters)</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                            <input type="text" id="searchQuery" class="form-control search-input-custom border-start-0" placeholder="Search...">
+                        </div>
+                    </div>
+
+                    <!-- Category Filter Header & Checkboxes -->
+                    <div class="mb-4">
+                        <div class="filter-header-badge">Category</div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input category-check" type="checkbox" value="Breakfast" id="catBreakfast">
+                            <label class="form-check-label small fw-semibold" for="catBreakfast">[ ] Breakfast</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input category-check" type="checkbox" value="Lunch" id="catLunch">
+                            <label class="form-check-label small fw-semibold" for="catLunch">[ ] Lunch</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input category-check" type="checkbox" value="Dinner" id="catDinner">
+                            <label class="form-check-label small fw-semibold" for="catDinner">[ ] Dinner</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input category-check" type="checkbox" value="Dessert" id="catDessert">
+                            <label class="form-check-label small fw-semibold" for="catDessert">[ ] Dessert</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input category-check" type="checkbox" value="Seafood" id="catSeafood">
+                            <label class="form-check-label small fw-semibold" for="catSeafood">[ ] Seafood</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input category-check" type="checkbox" value="Vegan" id="catVegan">
+                            <label class="form-check-label small fw-semibold" for="catVegan">[ ] Vegan</label>
+                        </div>
+                    </div>
+
+                    <!-- Cooking Time Header & Range Selector -->
+                    <div class="mb-4">
+                        <div class="filter-header-badge">Cooking Time</div>
+                        <div class="text-center mb-2">
+                            <span id="timeValueLabel" class="badge bg-danger text-white px-3 py-1 fw-bold">&lt; 45 min</span>
+                        </div>
+                        <input type="range" class="form-range" id="timeRangeSlider" min="10" max="120" step="5" value="45">
+                        <div class="d-flex justify-content-between text-muted small fw-bold mt-1">
+                            <span>0</span>
+                            <span>120+</span>
+                        </div>
+
+                        <!-- Quick Filters -->
+                        <div class="mt-3">
+                            <div class="small fw-bold text-muted mb-2">Quick Filters:</div>
+                            <button type="button" class="quick-filter-btn" data-time-limit="15">&lt;15 min</button>
+                            <button type="button" class="quick-filter-btn" data-time-limit="30">&lt;30 min</button>
+                            <button type="button" class="quick-filter-btn" data-time-limit="45">&lt;45 min</button>
+                            <button type="button" class="quick-filter-btn" data-time-limit="60">&lt;60 min</button>
+                        </div>
+                    </div>
+
+                    <!-- Difficulty Checks -->
+                    <div class="mb-4">
+                        <div class="filter-header-badge">Difficulty</div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input difficulty-check" type="checkbox" value="Easy" id="diffEasy">
+                            <label class="form-check-label small fw-semibold" for="diffEasy">[ ] Easy</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input difficulty-check" type="checkbox" value="Medium" id="diffMedium">
+                            <label class="form-check-label small fw-semibold" for="diffMedium">[ ] Medium</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input difficulty-check" type="checkbox" value="Hard" id="diffHard">
+                            <label class="form-check-label small fw-semibold" for="diffHard">[ ] Hard</label>
+                        </div>
+                    </div>
+
+                    <!-- Reset Filters Button -->
+                    <button type="button" id="resetFilters" class="btn btn-reset-filters mb-4">
+                        <i class="bi bi-arrow-counterclockwise me-1"></i> Clear All Filters
+                    </button>
+
+                    <!-- Popular Tags -->
+                    <div>
+                        <div class="filter-header-badge">Popular Tags</div>
+                        <div>
+                            <span class="tag-pill">#Chicken</span>
+                            <span class="tag-pill">#Vegan</span>
+                            <span class="tag-pill">#Quick</span>
+                            <span class="tag-pill">#Healthy</span>
+                            <span class="tag-pill">#Spicy</span>
+                            <span class="tag-pill">#Sweet</span>
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+
