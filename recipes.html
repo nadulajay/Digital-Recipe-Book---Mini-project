@@ -49,9 +49,8 @@
             </div>
         </nav>
     </header>
-</body>    
-</html>
-<!-- Main Content Area - Recipe Dashboard Layout -->
+
+    <!-- Main Content Area - Recipe Dashboard Layout -->
     <main class="container my-4">
         <div class="row g-4">
 
@@ -157,3 +156,119 @@
                 </div>
             </aside>
 
+            <!-- DYNAMIC CONTENT AREA -->
+            <section class="col-lg-9 col-md-8">
+                
+                <!-- Result Count Header -->
+                <div class="bg-light p-3 rounded-3 border mb-4 text-center">
+                    <h5 id="resultCountHeading" class="fw-bold mb-0 text-secondary">Showing: All Recipes (24 results)</h5>
+                </div>
+
+                <!-- Recipe Cards Workspace Grid -->
+                <div class="row g-4" id="recipeWorkspace">
+
+                    <!-- Recipe Card 1 -->
+                    <div class="col-lg-4 col-md-6 recipe-grid-item" data-title="Spicy Sri Lankan Chicken Curry" data-category="Dinner" data-difficulty="Medium" data-time="45" data-tags="chicken spicy curry dinner">
+                        <div class="recipe-card">
+                            <div class="recipe-img-container">
+                                <span class="badge-category">Dinner</span>
+                                <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80" alt="Spicy Sri Lankan Chicken Curry" class="recipe-img">
+                            </div>
+                            <div class="recipe-card-body">
+                                <h6 class="recipe-title">Spicy Sri Lankan Chicken Curry</h6>
+                                <p class="small text-muted mb-2">Time: 45 min</p>
+                                <button class="btn btn-view-recipe mt-auto" onclick="openRecipeModal(1)">View Recipe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Card 2 -->
+                    <div class="col-lg-4 col-md-6 recipe-grid-item" data-title="strawberry pancake" data-category="Breakfast" data-difficulty="Easy" data-time="20" data-tags="sweet breakfast quick">
+                        <div class="recipe-card">
+                            <div class="recipe-img-container">
+                                <span class="badge-category">Breakfast</span>
+                                <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80" alt="strawberry pancake" class="recipe-img">
+                            </div>
+                            <div class="recipe-card-body">
+                                <h6 class="recipe-title">strawberry pancake</h6>
+                                <p class="small text-muted mb-2">Time: 20 min</p>
+                                <button class="btn btn-view-recipe mt-auto" onclick="openRecipeModal(2)">View Recipe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Card 3 -->
+                    <div class="col-lg-4 col-md-6 recipe-grid-item" data-title="Chocolate Lava Cake" data-category="Dessert" data-difficulty="Medium" data-time="25" data-tags="chocolate dessert sweet">
+                        <div class="recipe-card">
+                            <div class="recipe-img-container">
+                                <span class="badge-category">Dessert</span>
+                                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80" alt="Chocolate Lava Cake" class="recipe-img">
+                            </div>
+                            <div class="recipe-card-body">
+                                <h6 class="recipe-title">Chocolate Lava Cake</h6>
+                                <p class="small text-muted mb-2">Time: 25 min</p>
+                                <button class="btn btn-view-recipe mt-auto" onclick="openRecipeModal(3)">View Recipe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Card 4 -->
+                    <div class="col-lg-4 col-md-6 recipe-grid-item" data-title="Nasi Goreng" data-category="Lunch" data-difficulty="Easy" data-time="30" data-tags="rice lunch spicy quick">
+                        <div class="recipe-card">
+                            <div class="recipe-img-container">
+                                <span class="badge-category">Lunch</span>
+                                <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80" alt="Nasi Goreng" class="recipe-img">
+                            </div>
+                            <div class="recipe-card-body">
+                                <h6 class="recipe-title">Nasi Goreng</h6>
+                                <p class="small text-muted mb-2">Time: 30 min</p>
+                                <button class="btn btn-view-recipe mt-auto" onclick="openRecipeModal(4)">View Recipe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Card 5 -->
+                    <div class="col-lg-4 col-md-6 recipe-grid-item" data-title="Vegetable Chop Suey" data-category="Lunch" data-difficulty="Easy" data-time="25" data-tags="vegan healthy quick lunch">
+                        <div class="recipe-card">
+                            <div class="recipe-img-container">
+                                <span class="badge-category">Lunch</span>
+                                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80" alt="Vegetable Chop Suey" class="recipe-img">
+                            </div>
+                            <div class="recipe-card-body">
+                                <h6 class="recipe-title">Vegetable Chop Suey</h6>
+                                <p class="small text-muted mb-2">Time: 25 min</p>
+                                <button class="btn btn-view-recipe mt-auto" onclick="openRecipeModal(5)">View Recipe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Card 6 -->
+                    <div class="col-lg-4 col-md-6 recipe-grid-item" data-title="Lemon Garlic Shrimp Pasta" data-category="Dinner" data-difficulty="Medium" data-time="30" data-tags="seafood dinner pasta quick">
+                        <div class="recipe-card">
+                            <div class="recipe-img-container">
+                                <span class="badge-category">Dinner</span>
+                                <img src="https://images.unsplash.com/photo-1621996346565-e3d5d6281318?auto=format&fit=crop&w=800&q=80" alt="Lemon Garlic Shrimp Pasta" class="recipe-img">
+                            </div>
+                            <div class="recipe-card-body">
+                                <h6 class="recipe-title">Lemon Garlic Shrimp Pasta</h6>
+                                <p class="small text-muted mb-2">Time: 30 min</p>
+                                <button class="btn btn-view-recipe mt-auto" onclick="openRecipeModal(6)">View Recipe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Load More Recipe Button -->
+                <div class="text-center mt-5">
+                    <button class="btn btn-light border px-5 py-2 fw-semibold text-secondary rounded-pill shadow-sm">
+                        Load More Recipe...
+                    </button>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+</body>    
+</html>
