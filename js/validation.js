@@ -1,10 +1,3 @@
-/**
- * FlavorForge - Digital Recipe Book
- * ICT 1209 Mini Project - Rajarata University of Sri Lanka (2024 Batch)
- * Group Members: N.H Jayasinghe & M.S.P Perera
- * JavaScript Logic: Client-Side Form Validation (<div id="error-message"> Banner Handler)
- */
-
 document.addEventListener('DOMContentLoaded', function () {
     
     // ----------------------------------------------------------------------
