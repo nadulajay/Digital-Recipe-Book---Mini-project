@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlavorForge - Contact Us</title>
+    <meta name="description" content="Contact FlavorForge team for recipe inquiries, support, and culinary feedback.">
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-journal-richtext text-danger fs-3"></i>
+                    [Logo] <span>FlavorForge</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recipes.html">Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <a href="auth/login.html" class="btn btn-auth">
+                            <i class="bi bi-person-circle me-1"></i> Login/Register
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container my-5">
+
+        <!-- Page Header Title -->
+        <div class="text-center mb-5">
+            <h1 class="fw-bold display-5 text-dark position-relative d-inline-block">
+                Contact us
+                <span class="position-absolute bottom-0 start-50 translate-middle-x bg-danger rounded" style="height: 4px; width: 60px;"></span>
+            </h1>
+            <p class="text-muted mt-2">We would love to hear from you</p>
+        </div>
+
+        <!-- Wireframe Grid Layout -->
+        <div class="row g-4 align-items-stretch">
+
+            <!-- LEFT COLUMN: Get in Touch -->
+            <div class="col-lg-5 col-md-6">
+                <div class="contact-info-card d-flex flex-column justify-content-between">
+                    <div>
+                        <h2 class="fw-bold h3 mb-4 text-center">Get in Touch</h2>
+
+                        <!-- Location item -->
+                        <div class="d-flex gap-3 align-items-center mb-4">
+                            <div class="contact-icon-circle">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Location</h6>
+                                <p class="small text-muted mb-0">
+                                    Rajarata University of Sri Lanka,<br>
+                                    Anuradhapura,<br>
+                                    Mihintale
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Email item -->
+                        <div class="d-flex gap-3 align-items-center mb-4">
+                            <div class="contact-icon-circle">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Email</h6>
+                                <p class="small text-muted mb-0">
+                                    flavorforge@gmail.com<br>
+                                    info@flavorforge.com
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Hours item -->
+                        <div class="d-flex gap-3 align-items-center mb-4">
+                            <div class="contact-icon-circle">
+                                <i class="bi bi-clock-fill"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Hours</h6>
+                                <p class="small text-muted mb-0">
+                                    Mon - Fri: 9:00 AM - 5:00 PM<br>
+                                    Sat - Sun: Closed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Urgent Notice Box matching Wireframe -->
+                    <div class="urgent-notice-box">
+                        For urgent inquiries, please email directly and include "URGENT" in the subject line.
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Send us Message -->
+            <div class="col-lg-7 col-md-6">
+                <div class="contact-form-card">
+                    <div class="contact-form-header">
+                        Send us Message
+                    </div>
+                    <div class="contact-form-body">
+                        
+                        <!-- Form Sequence -->
+                        <form id="contactForm" novalidate>
+                            
+                            <!-- Full Name -->
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label fw-semibold small">Full Name</label>
+                                <input type="text" id="fullName" class="form-control form-control-lg bg-light border-0 fs-6" placeholder="e.g. Sithumi Perera" required>
+                            </div>
+
+                            <!-- Email Address -->
+                            <div class="mb-3">
+                                <label for="emailAddress" class="form-label fw-semibold small">Email Address</label>
+                                <input type="email" id="emailAddress" class="form-control form-control-lg bg-light border-0 fs-6" placeholder="e.g. sithumi@gmail.com" required>
+                            </div>
+
+                            <!-- Your Message -->
+                            <div class="mb-4">
+                                <label for="userMessage" class="form-label fw-semibold small">Your Message</label>
+                                <textarea id="userMessage" rows="5" class="form-control bg-light border-0 fs-6" placeholder="Type your message here..." required></textarea>
+                            </div>
+
+                            <!-- Course Guideline Required Error Message Banner Container -->
+                            <div id="error-message">
+                                Dynamic validation errors appear here
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-danger btn-lg w-100 py-3 fw-bold text-white shadow-sm">
+                                Submit Message
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">[LOGO] FlavorForge</div>
+                    <p class="text-muted small mb-3">(Brand Description)</p>
+                    <p class="small">FlavorForge is an interactive digital recipe workspace developed for home cooks and culinary lovers.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">&gt; Home</a></li>
+                        <li><a href="recipes.html">&gt; Recipes</a></li>
+                        <li><a href="recipes.html">&gt; Categories</a></li>
+                        <li><a href="contact.html">&gt; Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-title">Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="recipes.html">&gt; Breakfast</a></li>
+                        <li><a href="recipes.html">&gt; Lunch</a></li>
+                        <li><a href="recipes.html">&gt; Dinner</a></li>
+                        <li><a href="recipes.html">&gt; Dessert</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Newsletter</h6>
+                    <form id="newsletter-form-contact">
+                        <input type="email" class="form-control newsletter-input" placeholder="[ Email Input ]" required>
+                        <button type="submit" class="btn btn-subscribe">[ Subscribe ]</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 FlavorForge. All Rights Reserved. | <a href="#" class="text-secondary text-decoration-none">Social Links</a> | <a href="#" class="text-secondary text-decoration-none">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS Validation -->
+    <script src="js/validation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
