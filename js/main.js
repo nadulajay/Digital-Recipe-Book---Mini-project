@@ -168,4 +168,54 @@ const recipeDatabase = {
             "Garnish with lemon zest and fresh chopped parsley before serving."
         ]
     }
-};    
+};
+
+
+// Global Function to Open Recipe Detail Modal
+function openRecipeModal(recipeId) {
+    const recipe = recipeDatabase[recipeId];
+    if (!recipe) return;
+
+    const modalTitle = document.getElementById('recipeModalLabel');
+    const modalImage = document.getElementById('modalRecipeImage');
+    const modalCategory = document.getElementById('modalRecipeCategory');
+    const modalTime = document.getElementById('modalRecipeTime');
+    const modalDifficulty = document.getElementById('modalRecipeDifficulty');
+    const modalIngredients = document.getElementById('modalRecipeIngredients');
+    const modalInstructions = document.getElementById('modalRecipeInstructions');
+
+    if (modalTitle) modalTitle.innerText = recipe.title;
+    if (modalImage) modalImage.src = recipe.image;
+    if (modalCategory) modalCategory.innerText = recipe.category;
+    if (modalTime) modalTime.innerText = recipe.time;
+    if (modalDifficulty) modalDifficulty.innerText = recipe.difficulty;
+
+    // Populate Ingredients
+    if (modalIngredients) {
+        modalIngredients.innerHTML = '';
+        recipe.ingredients.forEach(item => {
+            const li = document.createElement('li');
+            li.className = 'ingredient-item';
+            li.innerHTML = `<i class="bi bi-check2-circle text-danger me-2"></i>${item}`;
+            modalIngredients.appendChild(li);
+        });
+    }
+
+    // Populate Instructions
+    if (modalInstructions) {
+        modalInstructions.innerHTML = '';
+        recipe.instructions.forEach((step, index) => {
+            const div = document.createElement('div');
+            div.className = 'instruction-step';
+            div.innerHTML = `<span class="step-number">${index + 1}</span> ${step}`;
+            modalInstructions.appendChild(div);
+        });
+    }
+
+    // Show Bootstrap Modal
+    const modalElement = document.getElementById('recipeModal');
+    if (modalElement) {
+        const bsModal = new bootstrap.Modal(modalElement);
+        bsModal.show();
+    }
+}
