@@ -30,7 +30,7 @@ const recipeDatabase = {
         category: "Dinner",
         time: "45 mins",
         difficulty: "Medium",
-        image: "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80",
+        image: "../pictures/Chicken curry.png",
         description: "Authentic Sri Lankan chicken curry infused with roasted spices, coconut milk, and curry leaves.",
         ingredients: [
             "1 kg Chicken, cut into pieces",
@@ -55,7 +55,7 @@ const recipeDatabase = {
         category: "Breakfast",
         time: "20 mins",
         difficulty: "Easy",
-        image: "https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80",
+        image: "../pictures/Strawberry pancake.png",
         description: "Fluffy Japanese-style pancakes topped with fresh strawberries and maple syrup.",
         ingredients: [
             "1.5 cups All-purpose Flour",
@@ -79,7 +79,7 @@ const recipeDatabase = {
         category: "Dessert",
         time: "25 mins",
         difficulty: "Medium",
-        image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
+        image: "../pictures/Chocolate lava cake .png",
         description: "Warm individual chocolate cakes with a luscious molten chocolate center.",
         ingredients: [
             "100g Bittersweet Dark Chocolate",
@@ -102,7 +102,7 @@ const recipeDatabase = {
         category: "Lunch",
         time: "30 mins",
         difficulty: "Easy",
-        image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80",
+        image: "../pictures/Nasi goreng.png",
         description: "Classic Indonesian fried rice cooked with sweet soy sauce, chili paste, and fried egg.",
         ingredients: [
             "3 cups Day-old cooked Jasmine Rice",
@@ -126,7 +126,7 @@ const recipeDatabase = {
         category: "Lunch",
         time: "25 mins",
         difficulty: "Easy",
-        image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+        image: "../pictures/Vegetable Chop Suey.png",
         description: "Crispy colorful vegetables stir-fried in a rich savory garlic sauce.",
         ingredients: [
             "1 cup Broccoli florets & Cauliflower",
@@ -150,7 +150,7 @@ const recipeDatabase = {
         category: "Dinner",
         time: "30 mins",
         difficulty: "Medium",
-        image: "https://images.unsplash.com/photo-1621996346565-e3d5d6281318?auto=format&fit=crop&w=800&q=80",
+        image: "../pictures/Lemon Garlic Shrimp Pasta.png",
         description: "Succulent shrimp tossed in linguine with fresh lemon juice, garlic butter, and parsley.",
         ingredients: [
             "250g Linguine or Spaghetti pasta",

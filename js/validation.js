@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     
-    // ----------------------------------------------------------------------
     // 1. Contact Form Validation Logic (contact.html)
-    // ----------------------------------------------------------------------
+
     const contactForm = document.getElementById('contactForm');
     const errorMessageDiv = document.getElementById('error-message');
 
@@ -55,9 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // ----------------------------------------------------------------------
     // 2. Authentication Forms Validation Logic (login.html & register.html)
-    // ----------------------------------------------------------------------
+    
     const loginForm = document.getElementById('loginForm');
     if (loginForm) {
         loginForm.addEventListener('submit', function (e) {

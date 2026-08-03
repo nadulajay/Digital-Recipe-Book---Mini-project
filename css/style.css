@@ -29,9 +29,7 @@ main {
     flex: 1;
 }
 
-/* --------------------------------------------------------------------------
-   Top Header & Navigation Bar
-   -------------------------------------------------------------------------- */
+/* Top Header & Navigation Bar */
 .navbar-custom {
     background-color: var(--nav-bg) !important;
     padding: 14px 0;
@@ -81,9 +79,8 @@ main {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(224, 86, 76, 0.3);
 }
-/* --------------------------------------------------------------------------
-   Hero Section & Carousel
-   -------------------------------------------------------------------------- */
+/* Hero Section & Carousel */
+
 .hero-section {
     background-color: #e9ecef;
     border-radius: 16px;
@@ -156,9 +153,8 @@ main {
     transform: scale(1.05);
 }
 
-/* --------------------------------------------------------------------------
-   Section Headers
-   -------------------------------------------------------------------------- */
+/*Section Headers*/
+
 .section-title-box {
     border: 1.5px dashed #b0bec5;
     padding: 12px 28px;
@@ -170,9 +166,8 @@ main {
     margin-bottom: 30px;  
 }
 
-/* --------------------------------------------------------------------------
-   Recipe Cards & Grid
-   -------------------------------------------------------------------------- */
+/*Recipe Cards & Grid */
+
 .recipe-card {
     border: 1px solid #e2e8f0;
     border-radius: var(--border-radius);
@@ -273,9 +268,8 @@ main {
     background-color: var(--primary-color);
     color: #ffffff;
 }
-/* --------------------------------------------------------------------------
-   Recipe Dashboard Sidebar Filters
-   -------------------------------------------------------------------------- */
+/*Recipe Dashboard Sidebar Filters */
+
 .filter-sidebar {
     background-color: #f7f9fa;
     border: 1px solid #e3e8ec;
@@ -357,9 +351,8 @@ main {
     background-color: #b7950b;
     color: #ffffff;
 }
-/* --------------------------------------------------------------------------
-   Contact Page Styling
-   -------------------------------------------------------------------------- */
+/* Contact Page Styling */
+
 .contact-info-card {
     background-color: #eef2f5;
     border-radius: var(--border-radius);
@@ -426,9 +419,7 @@ main {
     font-weight: 600;
 }
 
-/* ---/* --------------------------------------------------------------------------
-   Contact Page Styling
-   -------------------------------------------------------------------------- */
+/*Contact Page Styling*/
 .contact-info-card {
     background-color: #eef2f5;
     border-radius: var(--border-radius);
@@ -495,9 +486,8 @@ main {
     font-weight: 600;
 }
 
------------------------------------------------------------------------
-   Footer Component
-   -------------------------------------------------------------------------- */
+ /*Footer Component  */
+
 .footer-custom {
     background-color: var(--footer-bg);
     color: #d0d3d4;
@@ -582,9 +572,8 @@ main {
     color: #85929e;
 }
 
-/* --------------------------------------------------------------------------
-   Recipe Detail Modal Styling
-   -------------------------------------------------------------------------- */
+/* Recipe Detail Modal Styling */
+
 .modal-header-custom {
     background-color: var(--nav-bg);
     border-bottom: 1px solid #f5b7b1;
