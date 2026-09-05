@@ -1,13 +1,13 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
     
-    // 1. Contact Form Validation Logic (contact.html)
-
+    
     const contactForm = document.getElementById('contactForm');
     const errorMessageDiv = document.getElementById('error-message');
 
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
-            e.preventDefault(); // Prevent default submission for Phase 2 validation test
             
             const fullName = document.getElementById('fullName');
             const email = document.getElementById('emailAddress');
@@ -40,26 +40,20 @@ document.addEventListener('DOMContentLoaded', function () {
             // Display Validation Results in <div id="error-message">
             if (errorMessageDiv) {
                 if (errors.length > 0) {
+                    e.preventDefault(); // Block PHP submission if client-side validation fails
                     errorMessageDiv.style.display = 'block';
                     errorMessageDiv.className = 'alert alert-danger shadow-sm';
                     errorMessageDiv.innerHTML = `<i class="bi bi-exclamation-triangle-fill me-2"></i><strong>Validation Failed:</strong><br>${errors.join('<br>')}`;
                     errorMessageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                } else {
-                    errorMessageDiv.style.display = 'block';
-                    errorMessageDiv.className = 'alert alert-success shadow-sm';
-                    errorMessageDiv.innerHTML = `<i class="bi bi-check-circle-fill me-2"></i><strong>Success!</strong> Your message has been validated successfully and is ready for PHP processing.`;
-                    contactForm.reset();
                 }
             }
         });
     }
 
-    // 2. Authentication Forms Validation Logic (login.html & register.html)
-    
+  
     const loginForm = document.getElementById('loginForm');
     if (loginForm) {
         loginForm.addEventListener('submit', function (e) {
-            e.preventDefault();
             const loginEmail = document.getElementById('loginEmail');
             const loginPass = document.getElementById('loginPassword');
             const authError = document.getElementById('auth-error-message');
@@ -75,17 +69,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 errors.push('Password must be at least 6 characters.');
             }
 
-            if (authError) {
-                if (errors.length > 0) {
-                    authError.style.display = 'block';
-                    authError.className = 'alert alert-danger';
-                    authError.innerHTML = errors.join('<br>');
-                } else {
-                    authError.style.display = 'block';
-                    authError.className = 'alert alert-success';
-                    authError.innerHTML = 'Login credentials format valid! Redirecting...';
-                    setTimeout(() => window.location.href = '../recipes.html', 1200);
-                }
+            if (authError && errors.length > 0) {
+                e.preventDefault();
+                authError.style.display = 'block';
+                authError.className = 'alert alert-danger';
+                authError.innerHTML = errors.join('<br>');
             }
         });
     }
@@ -93,7 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const registerForm = document.getElementById('registerForm');
     if (registerForm) {
         registerForm.addEventListener('submit', function (e) {
-            e.preventDefault();
             const regUsername = document.getElementById('regUsername');
             const regEmail = document.getElementById('regEmail');
             const regPass = document.getElementById('regPassword');
@@ -119,17 +106,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 errors.push('Passwords do not match.');
             }
 
-            if (regError) {
-                if (errors.length > 0) {
-                    regError.style.display = 'block';
-                    regError.className = 'alert alert-danger';
-                    regError.innerHTML = errors.join('<br>');
-                } else {
-                    regError.style.display = 'block';
-                    regError.className = 'alert alert-success';
-                    regError.innerHTML = 'Registration valid! Redirecting to login...';
-                    setTimeout(() => window.location.href = 'login.html', 1200);
-                }
+            if (regError && errors.length > 0) {
+                e.preventDefault();
+                regError.style.display = 'block';
+                regError.className = 'alert alert-danger';
+                regError.innerHTML = errors.join('<br>');
             }
         });
     }
