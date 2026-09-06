@@ -36,7 +36,7 @@ try {
             <div class="container">
                 <a class="navbar-brand" href="index.php">
                     <i class="bi bi-journal-richtext text-danger fs-3"></i>
-                    [Logo] <span>FlavorForge</span>
+                     <span>FlavorForge</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                     <span class="navbar-toggler-icon"></span>
@@ -209,7 +209,7 @@ try {
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <div class="footer-brand">[LOGO] FlavorForge</div>
+                    <div class="footer-brand"> FlavorForge</div>
                     <p class="text-muted small mb-3">(Brand Description)</p>
                     <p class="small">FlavorForge is an interactive digital recipe workspace developed for home cooks and culinary lovers.</p>
                 </div>
@@ -234,8 +234,8 @@ try {
                 <div class="col-lg-3 col-md-6">
                     <h6 class="footer-title">Newsletter</h6>
                     <form id="newsletter-form">
-                        <input type="email" id="newsletter-email" class="form-control newsletter-input" placeholder="[ Email Input ]" required>
-                        <button type="submit" id="newsletter-submit" class="btn btn-subscribe">[ Subscribe ]</button>
+                        <input type="email" id="newsletter-email" class="form-control newsletter-input" placeholder=" Email Input " required>
+                        <button type="submit" id="newsletter-submit" class="btn btn-subscribe">Subscribe </button>
                     </form>
                 </div>
             </div>

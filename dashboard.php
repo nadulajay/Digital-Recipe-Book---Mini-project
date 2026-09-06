@@ -36,7 +36,7 @@ try {
             <div class="container">
                 <a class="navbar-brand" href="index.php">
                     <i class="bi bi-journal-richtext text-danger fs-3"></i>
-                    [Logo] <span>FlavorForge</span>
+                     <span>FlavorForge</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                     <span class="navbar-toggler-icon"></span>
@@ -97,27 +97,27 @@ try {
                         <div class="filter-header-badge">Category</div>
                         <div class="form-check mb-2">
                             <input class="form-check-input category-check" type="checkbox" value="Breakfast" id="catBreakfast">
-                            <label class="form-check-label small fw-semibold" for="catBreakfast">[ ] Breakfast</label>
+                            <label class="form-check-label small fw-semibold" for="catBreakfast"> Breakfast</label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input category-check" type="checkbox" value="Lunch" id="catLunch">
-                            <label class="form-check-label small fw-semibold" for="catLunch">[ ] Lunch</label>
+                            <label class="form-check-label small fw-semibold" for="catLunch"> Lunch</label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input category-check" type="checkbox" value="Dinner" id="catDinner">
-                            <label class="form-check-label small fw-semibold" for="catDinner">[ ] Dinner</label>
+                            <label class="form-check-label small fw-semibold" for="catDinner"> Dinner</label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input category-check" type="checkbox" value="Dessert" id="catDessert">
-                            <label class="form-check-label small fw-semibold" for="catDessert">[ ] Dessert</label>
+                            <label class="form-check-label small fw-semibold" for="catDessert"> Dessert</label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input category-check" type="checkbox" value="Seafood" id="catSeafood">
-                            <label class="form-check-label small fw-semibold" for="catSeafood">[ ] Seafood</label>
+                            <label class="form-check-label small fw-semibold" for="catSeafood"> Seafood</label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input category-check" type="checkbox" value="Vegan" id="catVegan">
-                            <label class="form-check-label small fw-semibold" for="catVegan">[ ] Vegan</label>
+                            <label class="form-check-label small fw-semibold" for="catVegan"> Vegan</label>
                         </div>
                     </div>
 
@@ -148,15 +148,15 @@ try {
                         <div class="filter-header-badge">Difficulty</div>
                         <div class="form-check mb-2">
                             <input class="form-check-input difficulty-check" type="checkbox" value="Easy" id="diffEasy">
-                            <label class="form-check-label small fw-semibold" for="diffEasy">[ ] Easy</label>
+                            <label class="form-check-label small fw-semibold" for="diffEasy"> Easy</label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input difficulty-check" type="checkbox" value="Medium" id="diffMedium">
-                            <label class="form-check-label small fw-semibold" for="diffMedium">[ ] Medium</label>
+                            <label class="form-check-label small fw-semibold" for="diffMedium"> Medium</label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input difficulty-check" type="checkbox" value="Hard" id="diffHard">
-                            <label class="form-check-label small fw-semibold" for="diffHard">[ ] Hard</label>
+                            <label class="form-check-label small fw-semibold" for="diffHard"> Hard</label>
                         </div>
                     </div>
 
@@ -331,7 +331,7 @@ try {
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <div class="footer-brand">[LOGO] FlavorForge</div>
+                    <div class="footer-brand"> FlavorForge</div>
                     <p class="text-muted small mb-3">(Brand Description)</p>
                     <p class="small">FlavorForge is an interactive digital recipe workspace developed for home cooks and culinary lovers.</p>
                 </div>
@@ -356,8 +356,8 @@ try {
                 <div class="col-lg-3 col-md-6">
                     <h6 class="footer-title">Newsletter</h6>
                     <form id="newsletter-form-dash">
-                        <input type="email" class="form-control newsletter-input" placeholder="[ Email Input ]" required>
-                        <button type="submit" class="btn btn-subscribe">[ Subscribe ]</button>
+                        <input type="email" class="form-control newsletter-input" placeholder="Email Input " required>
+                        <button type="submit" class="btn btn-subscribe"> Subscribe </button>
                     </form>
                 </div>
             </div>
